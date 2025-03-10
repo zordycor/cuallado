@@ -1,9 +1,9 @@
 ---
-const { text } = Astro.props
+const { text, anchor } = Astro.props
 ---
 
 <li class="mb-2">
-	<a href="#who" class="group relative w-auto">
+	<a href={anchor} class="group relative w-auto">
 		{text}
 		<span class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-white group-hover:w-full"></span>
 	</a>

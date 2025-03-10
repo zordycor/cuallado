@@ -2,10 +2,10 @@
 import MenuItem from "./MenuItem.astro";
 ---
 
-<section class="min-h-screen bg-[url('../assets/ladrillo.jpeg')] bg-cover">
+<section class="min-h-screen bg-[url('images/ladrillo.webp')] bg-cover">
 	<div class="grid grid-cols-7 grid-rows-7 gap-4">
         <div class="col-span-5 col-start-3 row-start-2">
-			<h1 class="font-sans text-5xl font-medium text-white">
+			<h1 class="font-sans text-5xl font-semibold text-white">
 				MATERIALS DE CONSTRUCCIÓ CUALLADO S.L.
 			</h1>
 		</div>
@@ -16,11 +16,11 @@ import MenuItem from "./MenuItem.astro";
 		</div>
 		<div class="col-span-2 row-span-2 col-start-6 row-start-6 text-end self-end font-sans text-white font-medium text-2xl">
 			<ul class="mr-8">
-				<MenuItem text="QUI SOM?" />
-				<MenuItem text="LA NOSTRA HISTÒRIA" />
-				<MenuItem text="EL NOSTRE COMPROMÍS" />
-				<MenuItem text="ELS NOSTRES SERVEIS" />
-				<MenuItem text="CONTACTA AMB NOSALTRES" />
+				<MenuItem text="QUI SOM?" anchor="#who" />
+				<MenuItem text="LA NOSTRA HISTÒRIA" anchor="#history" />
+				<MenuItem text="EL NOSTRE COMPROMÍS" anchor="#commitment" />
+				<MenuItem text="ELS NOSTRES SERVEIS" anchor="#services" />
+				<MenuItem text="CONTACTA AMB NOSALTRES" anchor="#contact" />
 			</ul>
 		</div>
 	</div>
