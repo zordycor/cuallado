@@ -5,7 +5,7 @@ const { title = 'Material de construcción Cuallado' } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="ca" class="scroll-smooth">
+<html lang="ca" class="scroll-smooth snap-y snap-mandatory">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -17,6 +17,9 @@ const { title = 'Material de construcción Cuallado' } = Astro.props;
 	</head>
 	<body>
 		<slot />
+		<a href="#hero" class="fixed bottom-6 right-6 w-15 animate-(--showArrow)">
+			<img src="images/ladrilloarrow.webp" alt="Tornar a dalt" />
+		</a>
 	</body>
 </html>
 
