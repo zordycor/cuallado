@@ -8,6 +8,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: 'https://zordycor.github.io',
-  base: 'cuallado',
+  base: import.meta.env.MODE !== 'development' ? 'cuallado' : '/',
   outDir: './docs'
 });
