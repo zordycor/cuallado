@@ -7,5 +7,6 @@ export default defineConfig({
 	vite: {
     plugins: [tailwindcss()],
   },
-  outDir: './docs'
+  site: 'https://zordycor.github.io',
+  base: 'cuallado'
 });
