@@ -17,7 +17,10 @@ const { title = 'Material de construcción Cuallado' } = Astro.props;
 	</head>
 	<body>
 		<slot />
-		<a href="#hero" class="fixed bottom-6 right-6 w-15 animate-(--showArrow)">
+		<a href="#hero"
+			class="fixed bottom-6 right-6 w-15"
+			style="animation: showArrow linear forwards; animation-timeline: view();"
+		>
 			<img src="images/ladrilloarrow.webp" alt="Tornar a dalt" />
 		</a>
 	</body>

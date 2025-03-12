@@ -2,10 +2,9 @@
 
 :root {
 	--font-serif: "PT Serif";
-	--showArrow: fade-in linear forwards;
-
 }
-@keyframes fade-in {
+
+@keyframes showArrow {
   from {
 	opacity: 0;
   }
