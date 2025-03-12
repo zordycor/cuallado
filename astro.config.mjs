@@ -8,5 +8,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: 'https://zordycor.github.io',
-  base: 'cuallado'
+  base: '/cuallado'
 });
