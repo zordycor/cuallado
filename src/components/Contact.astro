@@ -1,3 +1,7 @@
+---
+import ContactSection from "./ContactSection.astro";
+---
+
 <section id="contact" class="min-h-screen snap-center snap-always bg-[url('/images/azulejo.webp')] bg-cover">
 	<div class="p-32">
 		<h3 class="text-7xl font-serif">Contacta amb nosaltres</h3>
@@ -6,51 +10,36 @@
 			llarg dels anys. <b>Treballem amb tu perquè cada projecte siga un èxit.</b>
 		</p>
 		<div class="grid grid-cols-3 gap-16 py-12 text-white contrast-70">
-			<div class="flex flex-col justify-between bg-amber-500 p-8 min-h-70">
-				<h4 class="text-4xl font-serif font-medium">
-					Ací ens trobem
-				</h4>
-				<div>
-					<p class="text-2xl font-sans font-medium">
-						Direcció
-					</p>
-					<p class="text-xl font-sans">
-						Carrer Pintor Sabater, 7, 46910 Sedaví, Valencia
-					</p>
-				</div>
-			</div>
-			<div class="flex flex-col justify-between bg-amber-500 p-8">
-				<h4 class="text-4xl font-serif font-medium">
-					Ací ens escoltem
-				</h4>
-				<div>
-					<p class="text-2xl font-sans font-medium">
-						Telèfon
-					</p>
-					<p class="text-xl font-sans">
-						963960175
-					</p>
-					<p class="text-2xl font-sans font-medium">
-						Email
-					</p>
-					<p class="text-xl font-sans">
-						cuallado@cuallado.com
-					</p>
-				</div>
-			</div>
-			<div class="flex flex-col justify-between bg-amber-500 p-8">
-				<h4 class="text-4xl font-serif font-medium">
-					Necessites un presupost?
-				</h4>
-				<div>
-					<p class="text-2xl font-sans font-medium">
-						Email
-					</p>
-					<p class="text-xl font-sans">
-						comercial@cuallado.com
-					</p>
-				</div>
-			</div>
+			<ContactSection title="Ací ens trobem">
+				<p class="text-2xl font-sans font-medium">
+					Direcció
+				</p>
+				<p class="text-xl font-sans">
+					Carrer Pintor Sabater, 7, 46910 Sedaví, Valencia
+				</p>
+			</ContactSection>
+			<ContactSection title="Ací ens escoltem">
+				<p class="text-2xl font-sans font-medium">
+					Telèfon
+				</p>
+				<p class="text-xl font-sans">
+					963960175
+				</p>
+				<p class="text-2xl font-sans font-medium">
+					Email
+				</p>
+				<p class="text-xl font-sans">
+					cuallado@cuallado.com
+				</p>
+			</ContactSection>
+			<ContactSection title="Necessites un presupost?">
+				<p class="text-2xl font-sans font-medium">
+					Email
+				</p>
+				<p class="text-xl font-sans">
+					comercial@cuallado.com
+				</p>
+			</ContactSection>
 		</div>
 	</div>
 </section>
