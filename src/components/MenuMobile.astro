@@ -5,11 +5,11 @@ import MenuItem from "./MenuItem.astro";
 <section>
 	<nav id="default-menu" class="bg-black/80 content-center text-center font-sans text-white font-medium text-3xl hidden top-0 fixed h-full w-full">
 		<ul>
-			<MenuItem text="QUI SOM?" anchor="#who" />
-			<MenuItem text="LA NOSTRA HISTÒRIA" anchor="#history" />
-			<MenuItem text="EL NOSTRE COMPROMÍS" anchor="#commitment" />
-			<MenuItem text="ELS NOSTRES SERVEIS" anchor="#services" />
-			<MenuItem text="CONTACTA AMB NOSALTRES" anchor="#contact" />
+			<MenuItem text="QUI SOM?" anchor="#who" responsive />
+			<MenuItem text="LA NOSTRA HISTÒRIA" anchor="#history" responsive />
+			<MenuItem text="EL NOSTRE COMPROMÍS" anchor="#commitment" responsive />
+			<MenuItem text="ELS NOSTRES SERVEIS" anchor="#services" responsive />
+			<MenuItem text="CONTACTA AMB NOSALTRES" anchor="#contact" responsive />
 		</ul>
 	</nav>
 	<button id="menu-button" class="xl:hidden fixed top-8 right-8 cursor-pointer" aria-label="Toggle Menu">
@@ -21,7 +21,7 @@ import MenuItem from "./MenuItem.astro";
 
 <script>
 	const defaultMenu = document.getElementById("default-menu");
-	const menuItem = document.querySelectorAll("li.mb-2");
+	const menuItem = document.querySelectorAll("a.w-auto");
 	const menuButton = document.getElementById("menu-button");
 	const svgPath = document.getElementById("svg-path");
 
@@ -37,6 +37,8 @@ import MenuItem from "./MenuItem.astro";
 
 	menuItem.forEach(item => {
 		item!.addEventListener("click", () => {
+			console.log("Menu item clicked");
+
 			defaultMenu!.classList.toggle("block");
 			defaultMenu!.classList.toggle("hidden");
 			if (defaultMenu!.classList.contains("block")) {
