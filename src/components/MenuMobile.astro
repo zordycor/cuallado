@@ -3,7 +3,7 @@ import MenuItem from "./MenuItem.astro";
 ---
 
 <section>
-	<nav id="default-menu" class="bg-black/80 content-center text-center font-sans text-white font-medium text-3xl hidden top-0 fixed h-full w-full">
+	<nav id="default-menu" class="bg-black/80 content-center text-center font-sans text-white font-medium md:text-5xl text-3xl hidden top-0 fixed h-full w-full">
 		<ul>
 			<MenuItem text="QUI SOM?" anchor="#who" responsive />
 			<MenuItem text="LA NOSTRA HISTÒRIA" anchor="#history" responsive />
@@ -13,7 +13,7 @@ import MenuItem from "./MenuItem.astro";
 		</ul>
 	</nav>
 	<button id="menu-button" class="xl:hidden fixed top-8 right-8 cursor-pointer" aria-label="Toggle Menu">
-		<svg class="w-8 h-8" aria-hidden="true" fill="none" viewBox="0 0 17 14">
+		<svg class="w-12 h-12" aria-hidden="true" fill="none" viewBox="0 0 17 14">
 			<path id="svg-path" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
 		</svg>
 	</button>

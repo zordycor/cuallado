@@ -2,7 +2,7 @@
 const { text, anchor, responsive = false } = Astro.props
 ---
 
-<li class="mb-2">
+<li class="lg:mb-3 mb-6">
 	<a href={anchor} class:list={[{'w-auto': responsive }, 'group relative']}>
 		{text}
 		<span class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-white group-hover:w-full"></span>
