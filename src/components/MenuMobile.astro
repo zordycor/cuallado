@@ -37,8 +37,6 @@ import MenuItem from "./MenuItem.astro";
 
 	menuItem.forEach(item => {
 		item!.addEventListener("click", () => {
-			console.log("Menu item clicked");
-
 			defaultMenu!.classList.toggle("block");
 			defaultMenu!.classList.toggle("hidden");
 			if (defaultMenu!.classList.contains("block")) {
